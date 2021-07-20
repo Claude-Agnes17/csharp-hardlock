@@ -8,7 +8,7 @@ namespace HardLock
         static void Main(string[] args)
         {
             string id = ""; // your hardware id
-            string result = "";
+            string result = ""; // hardware id for program lock
 
             ManagementObjectSearcher managementObjectSearcher = new ManagementObjectSearcher("Select ProcessorId From Win32_processor");
             ManagementObjectCollection manageObjectCollection = managementObjectSearcher.Get();
